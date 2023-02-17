@@ -6,4 +6,8 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface colligeReposotory extends JpaRepository<colligeEntity,Long> {
+    colligeEntity findByname(String name);
+    colligeEntity findByphone(String phone);
+
+
 }

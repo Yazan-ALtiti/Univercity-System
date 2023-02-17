@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface teachrtReposotory extends JpaRepository<teacherEntity,Long> {
+    teacherEntity findByname(String name);
+    teacherEntity findBymajor(String major);
 }
